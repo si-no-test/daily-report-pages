@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>今日日報</title>
+<script>
+  const now = new Date(new Date().toLocaleString('en-US', {timeZone: 'Asia/Taipei'}));
+  const y = now.getFullYear();
+  const m = String(now.getMonth() + 1).padStart(2, '0');
+  const d = String(now.getDate()).padStart(2, '0');
+  location.replace(`https://si-no-test.github.io/daily-report-pages/reports/${y}-${m}-${d}/index.html`);
+</script>
+</head>
+<body>載入今日日報中…</body>
+</html>
